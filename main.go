@@ -99,7 +99,6 @@ func getIssues(cfg config.Config) (map[string][]Issue, error) {
 
 func getMailBody(issues map[string][]Issue) string {
 	var sb strings.Builder
-	sb.WriteString("MIME-version: 1.0;\nContent-Type: text/html; charset=\"UTF-8\";\n")
 	sb.WriteString("<html><body>")
 	for key, value := range issues {
 		sb.WriteString(fmt.Sprintf("<h3>%s</h3>", key))
