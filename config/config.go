@@ -25,8 +25,8 @@ type Config struct {
 func GetConfig() (Config, error) {
 	viper.SetConfigName("config")
 	viper.SetConfigType("yaml")
-	viper.AddConfigPath("/etc/appname/")
-	viper.AddConfigPath("$HOME/.appname")
+	viper.AddConfigPath("/etc/statusbot/")
+	viper.AddConfigPath("$HOME/.statusbot")
 	viper.AddConfigPath(".")
 	err := viper.ReadInConfig()
 	if err != nil {

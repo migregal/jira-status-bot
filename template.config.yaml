@@ -1,0 +1,19 @@
+jira:
+  base_url: "<jira url>"
+  token: "<jira access token>"
+
+days: <days to search issues for>
+
+projects:
+  - "<project name to search for>"
+
+SWA:
+  "<custom field name to search for>":
+    - <custom field value>
+
+smtp:
+  address: "<smtp server to use>"
+  account: "<smtp server username to send email from>"
+  password: "<smtp server user password>"
+  to:
+    - "<email recievers>"
